@@ -1,0 +1,5 @@
+create_clock -period 20.000 -name rmii_ref_clk [get_ports rmii_ref_clk]
+set_input_delay -clock [get_clocks rmii_ref_clk] -min 1.400 [get_ports {rmii_rxd rmii_crs_rxdv rmii_rx_err}]
+set_input_delay -clock [get_clocks rmii_ref_clk] -max 5.000 [get_ports {rmii_rxd rmii_crs_rxdv rmii_rx_err}]
+set_output_delay -clock [get_clocks rmii_ref_clk] -min -2.000 [get_ports {rmii_txd rmii_tx_en}]
+set_output_delay -clock [get_clocks rmii_ref_clk] -max 7.000 [get_ports {rmii_txd rmii_tx_en}]

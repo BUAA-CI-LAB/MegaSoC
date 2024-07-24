@@ -1,0 +1,12 @@
+# jetbrains
+*.idea
+*.bsp
+
+#sublime
+*.sublime-project
+*.sublime-workspace
+*.log
+*.pb
+*.dir
+
+
