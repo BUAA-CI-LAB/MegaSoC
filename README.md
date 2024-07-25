@@ -22,7 +22,7 @@ OpenMegaSoC 提供了 SPI、SDIO、I2S、VGA、Ethernet、UART、CDBUS、I2C 等
 | -------------------------------------------------------- | ------------------------- | ------------ |
 | `0x00000000 - 0x0FFFFFFF`                                | Memory Controller         | 0            |
 | `0x1C000000 - 0x1C0FFFFF`<br />`0x1D000000 - 0x1D00FFFF` | SPI Device                | 1            |
-| `0x1D000000 - 0x1D0FFFFF`                                | AXI-Lite Device           | 2            |
+| `0x1D010000 - 0x1D0FFFFF`                                | AXI-Lite Device           | 2            |
 | `0x1D100000 - 0x1D1FFFFF`                                | USB Controller            | 3            |
 | Other Addresses                                          | AXI-Lite Device (Default) | 2            |
 
@@ -30,15 +30,15 @@ OpenMegaSoC 提供了 SPI、SDIO、I2S、VGA、Ethernet、UART、CDBUS、I2C 等
 
 | Address Range             | Device                         | Select Value |
 | ------------------------- | ------------------------------ | ------------ |
-| `0x1D100000 - 0x1D3FFFFF` | APB Devices (UART, I2C, CDBUS) | 1            |
-| `0x1D400000 - 0x1D4FFFFF` | Configuration Registers        | 2            |
-| `0x1D500000 - 0x1D5FFFFF` | Ethernet Controller            | 3            |
-| `0x1D600000 - 0x1D6FFFFF` | Interrupt Controller           | 4            |
-| `0x1D700000 - 0x1D7FFFFF` | SD Controller                  | 5            |
-| `0x1DA00000 - 0x1DAFFFFF` | JPEG Controller                | 6            |
-| `0x1DB00000 - 0x1DBFFFFF` | I2S Controller-0（DMA）        | 7            |
-| `0x1DC00000 - 0x1DCFFFFF` | I2S Controller-1（GEN）        | 8            |
-| `0x1DD00000 - 0x1DDFFFFF` | VGA Controller                 | 9            |
+| `0x1D010000 - 0x1D03FFFF` | APB Devices (UART, I2C, CDBUS) | 1            |
+| `0x1D040000 - 0x1D04FFFF` | Configuration Registers        | 2            |
+| `0x1D050000 - 0x1D05FFFF` | Ethernet Controller            | 3            |
+| `0x1D060000 - 0x1D06FFFF` | Interrupt Controller           | 4            |
+| `0x1D070000 - 0x1D07FFFF` | SD Controller                  | 5            |
+| `0x1D0A0000 - 0x1D0AFFFF` | JPEG Controller                | 6            |
+| `0x1D0B0000 - 0x1D0BFFFF` | I2S Controller-0（DMA）        | 7            |
+| `0x1D0C0000 - 0x1D0CFFFF` | I2S Controller-1（GEN）        | 8            |
+| `0x1D0D0000 - 0x1D0DFFFF` | VGA Controller                 | 9            |
 | Other Addresses           | SRAM Controller (Default)      | 0            |
 
 ### 2.3 IP来源
