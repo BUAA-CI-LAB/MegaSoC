@@ -22,3 +22,4 @@ set_output_delay -clock sdclk_pin -max 1.500 [get_ports sdram_CSn*]
 set_output_delay -clock sdclk_pin -min -0.800 [get_ports sdram_CSn*]
 set_output_delay -clock sdclk_pin -max 1.500 [get_ports sdram_RASn]
 set_output_delay -clock sdclk_pin -min -0.800 [get_ports sdram_RASn]
+ 
